@@ -5,7 +5,7 @@ on:
     - main
 env:
   AZURE_WEBAPP_NAME: studentCatalogue
-  AZURE_WEBAPP_PACKAGE_PATH: .\publish
+  AZURE_WEBAPP_PACKAGE_PATH: studentCatalogue\publish
   AZURE_APIM_RESOURCE_PATH: /
   AZURE_APIM_RESOURCEGROUP: students20231214011634ResourceGroup
   AZURE_APIM_SERVICENAME: studentCatalogueapi
@@ -19,7 +19,7 @@ env:
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 8.0.x
   WORKING_DIRECTORY: studentCatalogue
-jobs: 
+jobs:
   build:
     runs-on: windows-latest
     steps:
